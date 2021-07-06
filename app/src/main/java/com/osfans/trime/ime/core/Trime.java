@@ -603,7 +603,7 @@ public class Trime extends InputMethodService
     updateAsciiMode();
     canCompose = canCompose && !Rime.isEmpty();
     if (!onEvaluateInputViewShown()) setCandidatesViewShown(canCompose); //實體鍵盤進入文本框時顯示候選欄
-    if (mConfig.isShowStatusIcon()) showStatusIcon(R.drawable.status); //狀態欄圖標
+    if (mConfig.isShowStatusIcon()) showStatusIcon(R.drawable.ic_status); //狀態欄圖標
   }
 
   @Override
@@ -1187,7 +1187,7 @@ public class Trime extends InputMethodService
       AlertDialog.Builder builder =
           new AlertDialog.Builder(this)
               .setTitle(R.string.ime_name)
-              .setIcon(R.drawable.icon)
+              .setIcon(R.mipmap.ic_app_icon_round)
               .setCancelable(true)
               .setNegativeButton(
                   R.string.other_ime,
